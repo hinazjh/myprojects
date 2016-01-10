@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="613.421" Width="1082.237">
     <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="1054">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="413*"/>
+            <ColumnDefinition Width="124*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="1054" Grid.ColumnSpan="2">
             <TabItem Header="GPA Per Course" Margin="240,0,-305,-2">
 
                 <Grid Background="#FFE5E5E5"/>
@@ -22,6 +26,7 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="553" Margin="0,29,0,0" VerticalAlignment="Top" Width="1074"/>
+        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="553" Margin="0,29,0,0" VerticalAlignment="Top" Width="1074" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="425,279,0,0" VerticalAlignment="Top" Width="369" Height="153"/>
     </Grid>
 </Window>
